@@ -90,7 +90,7 @@ elif wg.peer:
         print(Fore.YELLOW+Style.BRIGHT+"Adding Peer to configuration file")
         os.system("echo '' >> {wg0}".format(wg0=wg0))
         os.system("echo '[Peer]' >> {wg0}".format(wg0=wg0))
-        os.system("echo PublikKey = {key} >> {wg0}".format(key=wg.key, wg0=wg0))
+        os.system("echo PublicKey = {key} >> {wg0}".format(key=wg.key, wg0=wg0))
         os.system("echo AllowedIPs = {allow} >> {wg0}".format(allow=wg.allow, wg0=wg0))
         print(Fore.GREEN+"Peer added to configuration file")
     else:
